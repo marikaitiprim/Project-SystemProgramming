@@ -4,7 +4,7 @@ Compilation command: make all
 Run: ./sniffer
     or ./sniffer -p <directory name>
 
-For your own help, create a directory for listener to monitor called "listenerdir" and run the program as ./sniffer -p ./listenerdir/
+For your own help, create a directory for listener to monitor, call it "listenerdir" and use the 3 text files 10.txt, 50.txt and 100.txt. Run the program as ./sniffer -p ./listenerdir/
 
 Manager.c: It's the main code for this task. It creates the listener using fork and then it runs the code for
 the manager. Using dup2 (pipe), it connects the stdout of the listener with the stdin of the manager. Manager reads the output 
